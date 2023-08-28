@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+*{
+    font-family: 'open sans';
+}
+body{
+    margin: 0;
+}
+.container{
+    background-image: url("../contatoheader.jpg");
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+}
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.navegacao img{
+    position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.lista-nav{
+    display: flex;
+
+}
+.lista-nav li a{
+    color: aliceblue;
+    position: relative;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.nav-link::after{
+    content: "";
+    height: 2px;
+    width: 90%;
+    background: #fe7467;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    opacity: 0;
+    margin-left: 3px;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+.imagem-robin{
+    padding-left: 100px;
+    padding-top: 300px;
+}
+.titulo{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding-top: 50px;
+}
+
+
+.texto-contato{
+    justify-content: space-around;
+    display: flex;
+    width: 500px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+input{
+    border: 2px solid #757474;
+    border-radius: 6px;
+    width: 250px;
+    height: 30px;
+    text-decoration: #757474;
+    padding-left: 20px;
+    margin: 10px 10px;
+    background-color: #f5f9fbfc;
+    flex-wrap: wrap;
+}
+
+textarea{
+    border: 2px solid #757474;
+    border-radius: 6px;
+    width: 250px;
+    padding-left: 20px;
+    margin-top: 6px;
+    background-color: #f5f9fbfc;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+}
+.input-1{
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.botao-1{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 560px;
+    margin-left: 10px;
+    border-radius: 16px;
+    height: 40px;
+    margin-top: 10px;
+    background: linear-gradient(#fe7467,#fc3836);
+    border: none;
+    font-size: 20px;
+    font-weight: 1000 ;
+    color: aliceblue;
+}
+ h4{
+    color: #3f3f3f;
+}
+h1{
+    color: #3f3f3f;
+}
+.titulo::after{
+    content: "";
+    height: 4px;
+    width: 120px;
+    background: #fc3836;
+    position: absolute;
+    bottom: 4px;   
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:600px) {
+    .imagem-robin{
+        display: none;
+    }
+    .container{
+        background-image: url("../robin\ contato\ mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+    }
+    .navegacao img{
+        margin: 0 auto;
+    }
+    .lista-nav{
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+    button{
+        width: 50%;
+        margin: 5px auto;
+    }
+    .texto-contato{
+        width: 70%;
+        margin: 10px auto;
+    }
+}

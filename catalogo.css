@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+*{
+    font-family: 'open sans';
+}
+body{
+    margin: 0 0;
+}
+
+.container-1{
+    background-image: url("../captainmarvelheader.jpg");
+    width: 100%;
+    height: 700px;
+    background-size:cover;
+    background-position: center;
+}
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.novidade{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 250px;
+    padding-left: 100px;
+}
+
+.navegacao img{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.navegacao ul{
+    display: flex;
+
+}
+.barra-nav li a{
+    color: aliceblue;
+    position: relative;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.nav-link::after{
+    content: "";
+    height: 2px;
+    width: 90%;
+    background: #fe7467;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    opacity: 0;
+    margin-left: 3px;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+button a{
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+h1{
+    margin-top: 45px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.container-2{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card{
+    width: 300px;
+
+}
+.botao{
+    background: linear-gradient(#fe7467,#fc3836);
+    border-radius: 12px;
+    border: none;
+    height: 30px;
+    width: 90px;
+}
+.botao:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.preco{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+p{
+    margin: 0;
+}
+.catalogo{
+    color: rgb(74, 72, 72);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.catalogo::after{
+    content: "";
+    height: 4px;
+    width: 120px;
+    background: #fc3836;
+    position: absolute;
+    bottom: -9px;   
+    display: flex;
+    justify-content: center;
+
+}
+.divisa-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.divisa-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px){
+    .novidade{
+        display: none;
+    }
+    .navegacao img{
+        padding-left: 20px;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+    .barra-nav{
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+    .card{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .container-1{
+        background-image: url("../captainmarvel\ mobile.jpg");
+        background-position: center;
+        background-size:cover;
+        height: 400px;
+        width: 100%;
+    }
+}

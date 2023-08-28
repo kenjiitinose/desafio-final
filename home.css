@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+*{
+    font-family: 'open sans';
+}
+
+.cabecalho {
+    width: 100%;
+    height: 700px;
+    background-image: url("../spidermanheader.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.absolut{
+    padding-left: 90px;
+}
+
+.logo-superhero{
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+header{
+    height: 200px;
+}
+
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.container-meio{
+    width: 100%;
+    height: 700px;
+    background-image: url("../thor_header.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.container-final{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.barra-nav{
+    display:flex;
+}
+
+.text{
+    width: 500px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(20, 20, 21);
+    align-items: center;
+
+}
+.texto1{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: center;
+    height: 500px;
+}
+.texto2{
+    display: flex;
+    justify-content: flex-end;
+    height: 500px;
+    flex-direction: column;
+    position: relative;
+}
+.text1{
+    width: 500px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: aliceblue;
+    align-items: center;
+}
+.titulo1{
+    color: aliceblue;
+    position: relative;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+}
+.catalogo{
+    font-size: 2em;
+    color: rgb(112, 112, 112);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 50px;
+}
+.final-pagina{
+    display: flex;
+    justify-content: flex-end;
+}
+.bonecos{
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+
+}
+.button{
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size:large;
+    background: linear-gradient(#fe7467,#fc3836);
+    border: none;
+    border-radius: 15px;
+    
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.barra-nav li a{
+    color: aliceblue;
+    position: relative;
+    margin-left: 30px;
+
+}
+
+.nav-link::after{
+    content: "";
+    height: 2px;
+    width: 90%;
+    background: #fe7467;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    opacity: 0;
+    margin-left: 3px;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.catalogo::after{
+    content: "";
+    height: 4px;
+    width: 100px;
+    background: #fe7467;
+    position: absolute;
+    bottom: -9px;
+    display: flex;
+    justify-content: center;
+
+}
+.titulo1::after{
+    content: "";
+    height: 4px;
+    width: 150px;
+    background: #e7dede;
+    position: absolute;
+    bottom:  -9px;
+
+}
+h4{ 
+    margin: 5px auto;
+}
+
+@media (max-width:600px){
+    .absolut{
+        width: 170px;
+        padding-left: 10px;
+        padding-top: 100px;
+    }
+    .cabecalho{
+        width: 100%;
+        background-image: url("../spidermanheader\ mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+    .logo-superhero{
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .barra-nav{
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+    .container-meio{
+        background: linear-gradient(#fe7467,#fc3836);
+        height: 600px;
+    }
+    .text1{
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+    .container-final{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    .bonecos{
+        position: absolute;
+        width: 100%;
+        padding-top: 500px;
+    }
+    .texto2{
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .text{
+        height: 350px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .button{
+        margin: 0 auto;
+    }
+}
